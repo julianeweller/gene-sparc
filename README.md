@@ -5,8 +5,6 @@ This project aims to annotate regions that are safe for gene editing (called saf
 ### Required modules
 This code runs in Python 3. Please check requirements.txt for required modules and their versions.
 
-### Installation
-TBD
 
 ### Usage
 
