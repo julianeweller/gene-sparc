@@ -1,4 +1,4 @@
-# Repository for the safeport and recoding (SPaRC) project
+# Safeport and recoding (SPaRC) project
 
 This project aims to annotate regions that are safe for gene editing (called safeports) and to to recode a genomic region by changing specific codons, e.g. replacing al GTA with GTT in the exons. Therefore, the script allows automated downloads of FASTA and gff from Ensemble via its REST API, annotates safeports, recodes the sequence and then creates a GenBank file. It mainly depends on BioPython for storing the sequence and annotation data. 
 
