@@ -2,11 +2,11 @@
 
 This project aims to annotate regions that are safe for gene editing (called safeports) and to to recode a genomic region by changing specific codons, e.g. replacing al GTA with GTT in the exons. Therefore, the script allows automated downloads of FASTA and gff from Ensemble via its REST API, annotates safeports, recodes the sequence and then creates a GenBank file. It mainly depends on BioPython for storing the sequence and annotation data. 
 
-### Required modules
+#### Required modules
 This code runs in Python 3. Please check requirements.txt for required modules and their versions.
 
 
-### Usage
+#### Usage
 
 The tool can be executed using the following command line structure:
 ```
@@ -46,7 +46,7 @@ Choose 'max' (if none of the overlapping cds is a MANE transcript, the longest c
 - -j, --join\
 If True, a joined CompoundLocation annotations will be created for each transcript.
 
-### Encoded presumptions
+#### Encoded presumptions
 - Organism is Human, assembly "GRCh38"
 - REST API
     - Included features in GFF3 download:\
