@@ -1,0 +1,144 @@
+##gff-version 3
+##sequence-region 19 1 11407
+19	annotation	remark	1	11407	.	.	.	gff-version=3;sequence-region=%28%2719%27%2C 3975055%2C 3986463%29
+19	feature	repeat_region	1	31	.	+	.	assembly_name=GRCh38;description=AluJo
+19	feature	repeat_region	1	31	.	+	.	assembly_name=GRCh38;description=AluJo
+19	feature	repeat_region	14	27	.	.	.	assembly_name=GRCh38;description=dust
+19	feature	repeat_region	36	297	.	+	.	assembly_name=GRCh38;description=AluSz6
+19	feature	repeat_region	36	297	.	+	.	assembly_name=GRCh38;description=AluSz6
+19	feature	repeat_region	308	594	.	+	.	assembly_name=GRCh38;description=AluSc
+19	feature	repeat_region	308	594	.	+	.	assembly_name=GRCh38;description=AluSc
+19	feature	repeat_region	575	594	.	.	.	assembly_name=GRCh38;description=dust
+19	feature	repeat_region	575	594	.	.	.	assembly_name=GRCh38;description=trf
+19	feature	repeat_region	3468	3775	.	+	.	assembly_name=GRCh38;description=AluY
+19	feature	repeat_region	3468	3775	.	+	.	assembly_name=GRCh38;description=AluY
+19	feature	repeat_region	3748	3775	.	.	.	assembly_name=GRCh38;description=dust
+19	feature	repeat_region	3748	3775	.	.	.	assembly_name=GRCh38;description=trf
+19	feature	repeat_region	3784	4099	.	+	.	assembly_name=GRCh38;description=AluSc8
+19	feature	repeat_region	3784	4099	.	+	.	assembly_name=GRCh38;description=AluSc8
+19	feature	repeat_region	3906	3922	.	.	.	assembly_name=GRCh38;description=dust
+19	feature	repeat_region	4073	4100	.	.	.	assembly_name=GRCh38;description=dust
+19	feature	repeat_region	4073	4101	.	.	.	assembly_name=GRCh38;description=trf
+19	feature	repeat_region	10719	10877	.	+	.	assembly_name=GRCh38;description=L1MD2
+19	feature	repeat_region	10719	10877	.	+	.	assembly_name=GRCh38;description=L1MD2
+19	feature	repeat_region	10897	10978	.	-	.	assembly_name=GRCh38;description=L2a
+19	feature	repeat_region	10897	10978	.	-	.	assembly_name=GRCh38;description=L2a
+19	feature	repeat_region	10998	11163	.	+	.	assembly_name=GRCh38;description=MIR
+19	feature	repeat_region	10998	11163	.	+	.	assembly_name=GRCh38;description=MIR
+19	feature	repeat_region	11185	11266	.	-	.	assembly_name=GRCh38;description=MIRb
+19	feature	repeat_region	11185	11266	.	-	.	assembly_name=GRCh38;description=MIRb
+19	feature	repeat_region	11407	11460	.	+	.	assembly_name=GRCh38;description=L2b
+19	feature	repeat_region	11407	11460	.	+	.	assembly_name=GRCh38;description=L2b
+19	Regulatory_Build	TF_binding_site	1	164	.	.	.	ID=TF_binding_site:ENSR00001021294;bound_end=3975347;bound_start=3974893;description=Transcription factor binding site;feature_type=TF binding site
+19	Regulatory_Build	TF_binding_site	203	292	.	.	.	ID=TF_binding_site:ENSR00001021295;bound_end=3975348;bound_start=3974894;description=Transcription factor binding site;feature_type=TF binding site
+19	Regulatory_Build	TF_binding_site	603	877	.	.	.	ID=TF_binding_site:ENSR00001021296;bound_end=3976101;bound_start=3975596;description=Transcription factor binding site;feature_type=TF binding site
+19	Regulatory_Build	CTCF_binding_site	1345	1544	.	.	.	ID=CTCF_binding_site:ENSR00001021298;bound_end=3976600;bound_start=3976401;description=CTCF binding site;feature_type=CTCF Binding Site
+19	Regulatory_Build	CTCF_binding_site	2345	2944	.	.	.	ID=CTCF_binding_site:ENSR00001021299;bound_end=3978000;bound_start=3977401;description=CTCF binding site;feature_type=CTCF Binding Site
+19	Regulatory_Build	promoter	7544	8345	.	.	.	ID=promoter:ENSR00001021297;bound_end=3984999;bound_start=3976131;description=Predicted promoter;feature_type=Promoter
+19	Regulatory_Build	promoter	8544	15745	.	.	.	ID=promoter:ENSR00000106136;bound_end=3990999;bound_start=3981002;description=Predicted promoter;feature_type=Promoter
+19	Regulatory_Build	CTCF_binding_site	11145	11344	.	.	.	ID=CTCF_binding_site:ENSR00001021300;bound_end=3986400;bound_start=3986201;description=CTCF binding site;feature_type=CTCF Binding Site
+19	dbSNP	sequence_variant	16	16	.	+	.	ID=sequence_variant:rs143237100;alleles=A,C;assembly_name=GRCh38;consequence_type=regulatory_region_variant
+19	dbSNP	sequence_variant	433	433	.	+	.	ID=sequence_variant:rs892128;alleles=G,A;assembly_name=GRCh38;consequence_type=intergenic_variant
+19	dbSNP	sequence_variant	439	439	.	+	.	ID=sequence_variant:rs745199;alleles=G,C;assembly_name=GRCh38;consequence_type=intergenic_variant
+19	dbSNP	sequence_variant	480	480	.	+	.	ID=sequence_variant:rs188586606;alleles=C,T;assembly_name=GRCh38;consequence_type=intergenic_variant
+19	dbSNP	sequence_variant	575	594	.	+	.	ID=sequence_variant:rs5826830;alleles=AAAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAA,AAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAAAAAAAAA,AAAAAAAAAAAAAAAAAAAAAAAAAAA;assembly_name=GRCh38;consequence_type=TF_binding_site_variant
+19	dbSNP	sequence_variant	1109	1109	.	+	.	ID=sequence_variant:rs76689616;alleles=C,G;assembly_name=GRCh38;consequence_type=missense_variant
+19	dbSNP	sequence_variant	1199	1199	.	+	.	ID=sequence_variant:rs73530391;alleles=G,A,C;assembly_name=GRCh38;consequence_type=missense_variant
+19	dbSNP	sequence_variant	1267	1267	.	+	.	ID=sequence_variant:rs3170368;alleles=T,G;assembly_name=GRCh38;consequence_type=3_prime_UTR_variant
+19	dbSNP	sequence_variant	1387	1387	.	+	.	ID=sequence_variant:rs2230567;alleles=G,A;assembly_name=GRCh38;consequence_type=3_prime_UTR_variant
+19	dbSNP	sequence_variant	1495	1495	.	+	.	ID=sequence_variant:rs2230566;alleles=C,G,T;assembly_name=GRCh38;consequence_type=3_prime_UTR_variant
+19	dbSNP	sequence_variant	1651	1651	.	+	.	ID=sequence_variant:rs2230565;alleles=C,G,T;assembly_name=GRCh38;consequence_type=synonymous_variant
+19	dbSNP	sequence_variant	1809	1809	.	+	.	ID=sequence_variant:rs62130414;alleles=C,T;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	1854	1854	.	+	.	ID=sequence_variant:rs79632895;alleles=T,C;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	2432	2432	.	+	.	ID=sequence_variant:rs36527;alleles=A,G;assembly_name=GRCh38;clinical_significance=benign,likely benign;consequence_type=synonymous_variant
+19	dbSNP	sequence_variant	3787	3787	.	+	.	ID=sequence_variant:rs12104134;alleles=C,A,T;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	4102	4102	.	+	.	ID=sequence_variant:rs62130415;alleles=G,C;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	4258	4258	.	+	.	ID=sequence_variant:rs74800864;alleles=T,C;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	4318	4318	.	+	.	ID=sequence_variant:rs2305111;alleles=G,T;assembly_name=GRCh38;clinical_significance=benign;consequence_type=synonymous_variant
+19	dbSNP	sequence_variant	4354	4354	.	+	.	ID=sequence_variant:rs36526;alleles=A,G;assembly_name=GRCh38;clinical_significance=benign,likely benign;consequence_type=synonymous_variant
+19	dbSNP	sequence_variant	5313	5313	.	+	.	ID=sequence_variant:rs17606942;alleles=G,T;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	5338	5338	.	+	.	ID=sequence_variant:rs111760650;alleles=T,C;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	5770	5770	.	+	.	ID=sequence_variant:rs36525;alleles=A,C,G,T;assembly_name=GRCh38;consequence_type=non_coding_transcript_exon_variant
+19	dbSNP	sequence_variant	6388	6388	.	+	.	ID=sequence_variant:rs11544965;alleles=A,G;assembly_name=GRCh38;clinical_significance=benign;consequence_type=synonymous_variant
+19	dbSNP	sequence_variant	6472	6472	.	+	.	ID=sequence_variant:rs45443207;alleles=A,G;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	6660	6660	.	+	.	ID=sequence_variant:rs78758018;alleles=C,T;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	6797	6797	.	+	.	ID=sequence_variant:rs112473658;alleles=C,G,T;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	7270	7270	.	+	.	ID=sequence_variant:rs11544964;alleles=G,A,T;assembly_name=GRCh38;clinical_significance=benign;consequence_type=synonymous_variant
+19	dbSNP	sequence_variant	7731	7731	.	+	.	ID=sequence_variant:rs7253591;alleles=C,T;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	7796	7796	.	+	.	ID=sequence_variant:rs34017760;alleles=G,A;assembly_name=GRCh38;consequence_type=synonymous_variant
+19	dbSNP	sequence_variant	7913	7913	.	+	.	ID=sequence_variant:rs2230561;alleles=G,A;assembly_name=GRCh38;consequence_type=synonymous_variant
+19	dbSNP	sequence_variant	8028	8028	.	+	.	ID=sequence_variant:rs76916233;alleles=G,A;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	8130	8130	.	+	.	ID=sequence_variant:rs2230560;alleles=A,C,G,T;assembly_name=GRCh38;consequence_type=missense_variant
+19	dbSNP	sequence_variant	8248	8248	.	+	.	ID=sequence_variant:rs2305107;alleles=G,A;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	8508	8508	.	+	.	ID=sequence_variant:rs16992164;alleles=T,C;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	8876	8876	.	+	.	ID=sequence_variant:rs117617967;alleles=G,A;assembly_name=GRCh38;consequence_type=non_coding_transcript_exon_variant
+19	dbSNP	sequence_variant	9358	9358	.	+	.	ID=sequence_variant:rs12975326;alleles=G,A,C,T;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	9399	9399	.	+	.	ID=sequence_variant:rs8100131;alleles=G,A;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	9486	9486	.	+	.	ID=sequence_variant:rs28635819;alleles=T,C;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	9714	9714	.	+	.	ID=sequence_variant:rs1445850;alleles=C,A,G,T;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	9734	9734	.	+	.	ID=sequence_variant:rs62131468;alleles=C,A,G;assembly_name=GRCh38;consequence_type=splice_region_variant
+19	dbSNP	sequence_variant	9849	9849	.	+	.	ID=sequence_variant:rs116005765;alleles=T,C;assembly_name=GRCh38;consequence_type=non_coding_transcript_exon_variant
+19	dbSNP	sequence_variant	9928	9929	.	+	.	ID=sequence_variant:rs5826832;alleles=TT,TTT;assembly_name=GRCh38;consequence_type=non_coding_transcript_exon_variant
+19	dbSNP	sequence_variant	10094	10094	.	+	.	ID=sequence_variant:rs6510778;alleles=A,G;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	10196	10196	.	+	.	ID=sequence_variant:rs62131469;alleles=C,G;assembly_name=GRCh38;consequence_type=intron_variant
+19	dbSNP	sequence_variant	10522	10522	.	+	.	ID=sequence_variant:rs7251017;alleles=C,A,G,T;assembly_name=GRCh38;consequence_type=regulatory_region_variant
+19	dbSNP	sequence_variant	10949	10949	.	+	.	ID=sequence_variant:rs10418537;alleles=G,A;assembly_name=GRCh38;consequence_type=regulatory_region_variant
+19	dbSNP	sequence_variant	11192	11194	.	+	.	ID=sequence_variant:rs142239485;alleles=ACA,A;assembly_name=GRCh38;consequence_type=regulatory_region_variant
+19	dbSNP	sequence_variant	11353	11353	.	+	.	ID=sequence_variant:rs10421759;alleles=A,T;assembly_name=GRCh38;consequence_type=regulatory_region_variant
+19	feature	inferred_parent	1000	3078	.	-	.	ID=transcript:ENST00000600794
+19	havana	CDS	2972	3078	.	-	1	ID=CDS:ENSP00000471265;Parent=transcript:ENST00000600794;assembly_name=GRCh38;protein_id=ENSP00000471265
+19	havana	CDS	1096	1244	.	-	2	ID=CDS:ENSP00000471265;Parent=transcript:ENST00000600794;assembly_name=GRCh38;protein_id=ENSP00000471265
+19	havana	exon	2972	3078	.	-	.	Name=ENSE00003060124;Parent=transcript:ENST00000600794;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=1;ensembl_phase=2;exon_id=ENSE00003060124;rank=1;version=1
+19	havana	exon	1000	1244	.	-	.	Name=ENSE00003118658;Parent=transcript:ENST00000600794;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=1;exon_id=ENSE00003118658;rank=2;version=1
+19	feature	inferred_parent	1000	10407	.	-	.	ID=transcript:ENST00000309311
+19	ensembl_havana	CDS	10322	10324	.	-	0	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	9080	9294	.	-	0	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	8054	8235	.	-	1	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	7751	7962	.	-	2	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	7190	7368	.	-	0	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	6891	6996	.	-	1	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	6283	6396	.	-	0	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	5785	5923	.	-	0	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	5458	5653	.	-	2	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	4752	5010	.	-	1	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	4273	4380	.	-	0	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	2763	3116	.	-	0	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	2372	2554	.	-	0	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	2159	2291	.	-	0	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	CDS	1498	1691	.	-	2	ID=CDS:ENSP00000307940;Parent=transcript:ENST00000309311;assembly_name=GRCh38;protein_id=ENSP00000307940
+19	ensembl_havana	exon	10322	10407	.	-	.	Name=ENSE00003201519;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=0;ensembl_phase=-1;exon_id=ENSE00003201519;rank=1;version=2
+19	ensembl_havana	exon	9080	9294	.	-	.	Name=ENSE00003544486;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=2;ensembl_phase=0;exon_id=ENSE00003544486;rank=2;version=1
+19	ensembl_havana	exon	8054	8235	.	-	.	Name=ENSE00001115375;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=1;ensembl_phase=2;exon_id=ENSE00001115375;rank=3;version=1
+19	ensembl_havana	exon	7751	7962	.	-	.	Name=ENSE00001115376;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=0;ensembl_phase=1;exon_id=ENSE00001115376;rank=4;version=1
+19	ensembl_havana	exon	7190	7368	.	-	.	Name=ENSE00001115372;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=2;ensembl_phase=0;exon_id=ENSE00001115372;rank=5;version=1
+19	ensembl_havana	exon	6891	6996	.	-	.	Name=ENSE00003535069;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=0;ensembl_phase=2;exon_id=ENSE00003535069;rank=6;version=1
+19	ensembl_havana	exon	6283	6396	.	-	.	Name=ENSE00003617697;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSE00003617697;rank=7;version=1
+19	ensembl_havana	exon	5785	5923	.	-	.	Name=ENSE00001316318;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=1;ensembl_phase=0;exon_id=ENSE00001316318;rank=8;version=1
+19	ensembl_havana	exon	5458	5653	.	-	.	Name=ENSE00001115367;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=2;ensembl_phase=1;exon_id=ENSE00001115367;rank=9;version=1
+19	ensembl_havana	exon	4752	5010	.	-	.	Name=ENSE00001115364;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=0;ensembl_phase=2;exon_id=ENSE00001115364;rank=10;version=1
+19	ensembl_havana	exon	4273	4380	.	-	.	Name=ENSE00001265527;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSE00001265527;rank=11;version=1
+19	ensembl_havana	exon	2763	3116	.	-	.	Name=ENSE00001115371;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSE00001115371;rank=12;version=1
+19	ensembl_havana	exon	2372	2554	.	-	.	Name=ENSE00001265516;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSE00001265516;rank=13;version=1
+19	ensembl_havana	exon	2159	2291	.	-	.	Name=ENSE00001115368;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=1;ensembl_phase=0;exon_id=ENSE00001115368;rank=14;version=1
+19	ensembl_havana	exon	1000	1691	.	-	.	Name=ENSE00001115369;Parent=transcript:ENST00000309311;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=1;exon_id=ENSE00001115369;rank=15;version=3
+19	feature	inferred_parent	3030	4403	.	-	.	ID=transcript:ENST00000596417
+19	havana	exon	4273	4403	.	-	.	Name=ENSE00003104141;Parent=transcript:ENST00000596417;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003104141;rank=1;version=1
+19	havana	exon	3030	3116	.	-	.	Name=ENSE00003075661;Parent=transcript:ENST00000596417;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003075661;rank=2;version=1
+19	feature	inferred_parent	5631	7257	.	-	.	ID=transcript:ENST00000598182
+19	havana	exon	7190	7257	.	-	.	Name=ENSE00003182003;Parent=transcript:ENST00000598182;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003182003;rank=1;version=1
+19	havana	exon	6891	6996	.	-	.	Name=ENSE00003624398;Parent=transcript:ENST00000598182;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003624398;rank=2;version=1
+19	havana	exon	6283	6396	.	-	.	Name=ENSE00003480308;Parent=transcript:ENST00000598182;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003480308;rank=3;version=1
+19	havana	exon	5631	5923	.	-	.	Name=ENSE00003099880;Parent=transcript:ENST00000598182;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003099880;rank=4;version=1
+19	feature	inferred_parent	5884	7478	.	-	.	ID=transcript:ENST00000598436
+19	havana	exon	7190	7478	.	-	.	Name=ENSE00003170656;Parent=transcript:ENST00000598436;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003170656;rank=1;version=1
+19	havana	exon	6891	6996	.	-	.	Name=ENSE00003624398;Parent=transcript:ENST00000598436;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003624398;rank=2;version=1
+19	havana	exon	6283	6396	.	-	.	Name=ENSE00003480308;Parent=transcript:ENST00000598436;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003480308;rank=3;version=1
+19	havana	exon	5884	5923	.	-	.	Name=ENSE00003106091;Parent=transcript:ENST00000598436;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003106091;rank=4;version=1
+19	ensembl	exon	7451	7516	.	-	.	Name=ENSE00001499058;Parent=transcript:ENST00000384048;assembly_name=GRCh38;constitutive=1;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00001499058;rank=1;version=1
+19	feature	inferred_parent	8198	10056	.	-	.	ID=transcript:ENST00000600720
+19	havana	exon	9737	10056	.	-	.	Name=ENSE00003101099;Parent=transcript:ENST00000600720;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003101099;rank=1;version=1
+19	havana	exon	9080	9294	.	-	.	Name=ENSE00003594818;Parent=transcript:ENST00000600720;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003594818;rank=2;version=1
+19	havana	exon	8198	8235	.	-	.	Name=ENSE00003018506;Parent=transcript:ENST00000600720;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003018506;rank=3;version=1
+19	feature	inferred_parent	8801	10407	.	-	.	ID=transcript:ENST00000594885
+19	havana	exon	10322	10407	.	-	.	Name=ENSE00001265579;Parent=transcript:ENST00000594885;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00001265579;rank=1;version=5
+19	havana	exon	8801	9294	.	-	.	Name=ENSE00003195932;Parent=transcript:ENST00000594885;assembly_name=GRCh38;constitutive=0;ensembl_end_phase=-1;ensembl_phase=-1;exon_id=ENSE00003195932;rank=2;version=1

@@ -1,0 +1,4 @@
+requests==2.24.0
+numpy==1.18.5
+BCBio==0.1
+Bio==0.2.4
