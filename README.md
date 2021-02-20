@@ -69,16 +69,11 @@ If True, a joined CompoundLocation annotations will be created for each transcri
 The user can either input a gene name/symbol or a region of interest. The GFF3 and FASTA data for a specified region is accessed on https://rest.ensembl.org.
 The framework for reading the GFF3 file and converting it into a GenBank file is based on bcbio-gff (https://github.com/chapmanb/bcbb/blob/master/gff/Scripts/gff/gff_to_genbank.py).
 
-![Code overview](./documentation/ToolOverview.png)
-
 #### Creating safeports: safeports.py
 Safeports are created in regions that have no other relevant annotation via createSAFEPORTS. The default annotations taken into account for this are 'exon', 'CDS', 'CTCF_binding_site', 'promoter', 'sequence_variant’, 'TF_binding_site’ and ‘repeat_region'. 
-
-![Safeports](./documentation/SafeportsOverview.png)
 
 ### Recoding
 
 The recode function replaces the codons based on codon_map in the sequence record, but protects nucleotides at the beginning or end of the coding sequence and handles overlaps based on a list of MANE transcripts. Even for coding sequences that are not overlapping, the user can choose to only
 recode MANE transcripts by indicating “maneonly”. Otherwise, if overlaps occur, the MANE transcript is recoded preferably. If the “soft” option is chosen, no coding sequence is recoded if the overlapping coding sequences are not part of a MANE transcript. If the “max” option is chosen, the longer coding sequence will be recoded, even if it’s not a MANE transcript. 
 
-![Recoding](./documentation/RecodingOverview.png)
