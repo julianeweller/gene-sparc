@@ -17,7 +17,7 @@ FILE] [-e length] [-sm {max,soft,maneonly}] [-j True]
 
 **positional arguments:**
 
-region Either gene name/symbol or region of interest
+region either gene name/symbol or region of interest
 
 **optional arguments:**
 
@@ -66,22 +66,19 @@ If True, a joined CompoundLocation annotations will be created for each transcri
 
 #### Downloading the GFF3 and FASTA file of a region or gene of interest: ensemble_rest.py
 
-The user can either input a gene name/symbol or a region of interest. If a gene name or symbol is given, getENSEMBLGeneLoc queries ENSEMBL for the sequence location and returns the chromosome number, start, and end. If a “flanking” size is given, the region location is extended equally on both sides by that number of base pairs. Then, the ENSEMBL GFF and FASTA data is accessed via the function getENSEMBLGFF and getENSEMBLFASTA. The GFF3 and FASTA data for a specified region is accessed on https://rest.ensembl.org via “get overlap/region/species/region” and “get sequence/region/species/region”. To match the genomic co-ordinates in the GFF3 file with the region-only FASTA sequence, updateGFFRegions iterates through the GFF features and subtracts the start co-ordinate of the region from each annotation. \
+The user can either input a gene name/symbol or a region of interest. The GFF3 and FASTA data for a specified region is accessed on https://rest.ensembl.org.
 The framework for reading the GFF3 file and converting it into a GenBank file is based on bcbio-gff (https://github.com/chapmanb/bcbb/blob/master/gff/Scripts/gff/gff_to_genbank.py).
-
-For the handling of overlapping coding sequences during recoding, a list of MANE transcripts is required. The function getMANETranscripts imports them from the transcript archive Tark (http://devtark.ensembl.org/). Therefore, a list of genes within the defined genomic region is extracted from the
-GFF3 file and the MANE transcripts for each gene is downloaded via “api/transcript/search/”.
 
 ![Code overview](./documentation/ToolOverview.png)
 
 #### Creating safeports: safeports.py
-Safeports are created in regions that have no other relevant annotation via createSAFEPORTS. The default annotations taken into account for this are 'exon', 'CDS', 'CTCF_binding_site', 'promoter', 'sequence_variant’, 'TF_binding_site’ and ‘repeat_region'. The function getSAFERegions iterates through the sequencing record features by calling getDANGERRegions that creates a list of the annotated regions called danger_regions. Then, the regions between the danger_regions are added to a list of safe_regions, if they have the specified minimum length via invertRegions and filterRegions. For those safe_regions, a safeport annotation is created using createFEATUREannot.
+Safeports are created in regions that have no other relevant annotation via createSAFEPORTS. The default annotations taken into account for this are 'exon', 'CDS', 'CTCF_binding_site', 'promoter', 'sequence_variant’, 'TF_binding_site’ and ‘repeat_region'. 
 
 ![Safeports](./documentation/SafeportsOverview.png)
 
 ### Recoding
 
 The recode function replaces the codons based on codon_map in the sequence record, but protects nucleotides at the beginning or end of the coding sequence and handles overlaps based on a list of MANE transcripts. Even for coding sequences that are not overlapping, the user can choose to only
-recode MANE transcripts by indicating “maneonly”. Otherwise, if overlaps occur, the MANE transcript is recoded preferably. If the “soft” option is chosen, no coding sequence is recoded if the overlapping coding sequences are not part of a MANE transcript. If the “max” option is chosen, the longer coding sequence will be recoded, even if it’s not a MANE transcript. First, the transcript id, start, end, phase and strand for each coding sequence is identified with getAnnotRange. Then, the coding sequences that are to be recoded are identified via selectCDS: this function looks for overlaps of the coding sequences and returns a list of CDS for recoding and a list of CDS that should be recoded but were in conflict with another MANE transcript CDS. Third, the sequences are searched for the target codon. getReplaceMapFor and getReplaceMapRev return the position and new nucleotide of the target nucleotides while taking into account the open reading frame and introns. The record sequence is then converted into a mutable sequence and the nucleotides are replaced by replaceCODON. Simultaneously, an annotation is created indicating the position and previous nucleotide before replacement.
+recode MANE transcripts by indicating “maneonly”. Otherwise, if overlaps occur, the MANE transcript is recoded preferably. If the “soft” option is chosen, no coding sequence is recoded if the overlapping coding sequences are not part of a MANE transcript. If the “max” option is chosen, the longer coding sequence will be recoded, even if it’s not a MANE transcript. 
 
 ![Recoding](./documentation/RecodingOverview.png)
