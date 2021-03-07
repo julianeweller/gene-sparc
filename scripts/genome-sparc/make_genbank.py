@@ -86,7 +86,7 @@ def joinFeature(gff_iterator, transcriptlist):
 
 def check_gff(gff_iterator):
     """Check GFF files before feeding to SeqIO to be sure they have sequences.
-    Modified by JW Nov 2020 since Bio.Aplhabet was removed from BioPython.
+    Modified Modified from https://github.com/chapmanb/bcbb since Bio.Aplhabet was removed from BioPython.
     """
     # should be included partially into flattenFeatures (the isinstance is not necessary)
     for rec in gff_iterator:
@@ -97,6 +97,7 @@ def check_gff(gff_iterator):
 
 def flatten_features(rec):
     # should be replaced by flattenFeatures
+    # Modified from https://github.com/chapmanb/bcbb
     """Make sub_features in an input rec flat for output.
 
     GenBank does not handle nested features, so we want to make
