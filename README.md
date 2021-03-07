@@ -77,3 +77,5 @@ Safeports are created in regions that have no other relevant annotation via crea
 The recode function replaces the codons based on codon_map in the sequence record, but protects nucleotides at the beginning or end of the coding sequence and handles overlaps based on a list of MANE transcripts. Even for coding sequences that are not overlapping, the user can choose to only
 recode MANE transcripts by indicating “maneonly”. Otherwise, if overlaps occur, the MANE transcript is recoded preferably. If the “soft” option is chosen, no coding sequence is recoded if the overlapping coding sequences are not part of a MANE transcript. If the “max” option is chosen, the longer coding sequence will be recoded, even if it’s not a MANE transcript. 
 
+## License
+All code, images and documents in this repository are freely available for all uses. Code is available under the MIT license and images, documentations and talks under the Creative Commons No Rights Reserved (CC0) license.
