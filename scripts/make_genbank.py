@@ -83,9 +83,12 @@ def joinFeature(gff_iterator, transcriptlist):
                     transcripts[tID].append(loc)
         # Create annotation for each transcript
         for tKey,tVal in transcripts.items():
-            new_feature = SeqFeature.SeqFeature(SeqFeature.CompoundLocation(tVal[1:]),type = 'joint CDS',id = tKey, qualifiers = tVal[0])
-            rec.features.append(new_feature)
-            logging.debug('Joined feature has been created for {}.'.format(tKey))
+            if len(tVal) > 2:
+                new_feature = SeqFeature.SeqFeature(SeqFeature.CompoundLocation(tVal[1:]),type = 'joint CDS',id = tKey, qualifiers = tVal[0])
+                rec.features.append(new_feature)
+                logging.debug('Joined feature has been created for {}.'.format(tKey))
+            else:
+                logging.debug('No joined feature has been created for {}, since this has only one feature.'.format(tKey))
         yield rec
 
 #### old functions since some of the above don't work
