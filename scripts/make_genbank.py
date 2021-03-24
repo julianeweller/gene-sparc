@@ -7,11 +7,19 @@ import time
 # If required, it translates the location first
 def translateFeatureLocation(location, region, translation=0):
     location2 = location + translation + 1
-    return SeqFeature.FeatureLocation(
-        start = max(0, location2.start),
-        end = min(location2.end, region.end),
-        strand = location2.strand
-    )
+    if location2.end < 0:
+        logging.debug('Error-prone feature detected: {}'.format(location2))
+        return SeqFeature.FeatureLocation(
+            start = 0,
+            end = 0,
+            strand = 0
+        )
+    else:
+        return SeqFeature.FeatureLocation(
+            start = max(0, location2.start),
+            end = min(location2.end, region.end),
+            strand = location2.strand
+        )
 
 # A function to update a feature's location:
 def updateFeature(feature, region, translation=0, log_depth=0):
@@ -24,7 +32,6 @@ def updateFeature(feature, region, translation=0, log_depth=0):
 def updateGFFRegions(gff_iterator,region):    
     # Iterate through all positions in the GFF datastream:
     for record in gff_iterator:
-        # (Recursively) update all the features:
         for feature in record.features:
             updateFeature(feature, region, translation=-region.start)
         # Update the record sequence:
@@ -104,6 +111,7 @@ def flatten_features(rec):
     everything top level.
 
     Modified by JW Nov 2020 to include naming of features.
+    Modified by JW March 2021 to remove features that have [0:0] location.
     """
     out = []
     for f in rec.features:
@@ -115,15 +123,20 @@ def flatten_features(rec):
                 if curf.type == 'remark':
                     logging.debug('Following remark annotation removed: \n {}'.format(curf))
                     continue
+                
+                elif curf.location.start == 0 and curf.location.end == 0:
+                    logging.debug('Location was previously of of range and is now removed: {}'.format(curf))
+                
                 else:
                     out.append(curf)
+
                 curf.qualifiers['note'] = curf.id
 
                 if len(curf.sub_features) > 0:
                     nextf.extend(curf.sub_features)
       
             cur = nextf
-            
+  
     rec.features = out
     logging.info('{} features have been flattened.'.format(len(out)))
     return rec
