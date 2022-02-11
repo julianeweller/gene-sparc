@@ -64,6 +64,8 @@ If True, a joined CompoundLocation annotations will be created for each transcri
 
 ## Workflow
 
+![Alt Text](Tool overview.png)
+
 #### Downloading the GFF3 and FASTA file of a region or gene of interest: ensemble_rest.py
 
 The user can either input a gene name/symbol or a region of interest. The GFF3 and FASTA data for a specified region is accessed on https://rest.ensembl.org.
