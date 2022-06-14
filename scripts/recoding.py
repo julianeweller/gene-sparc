@@ -2,8 +2,9 @@ import re
 import logging
 from Bio import SeqFeature
 from operator import itemgetter
+from library_design import export_primedesign_format
 
-def recode(gff_iterator, codonmap, endprotect, set_mane):
+def recode(gff_iterator, codonmap, endprotect, set_mane, outdir, outprefix, primedesign):
     """ Replaces the codons based on codonmap in the Sequence Record, 
     but protects nucleotides at the beginning or end of the coding sequence
     and handles overlaps based on MANE transcript list and rules definet by set_mane.
@@ -37,6 +38,11 @@ def recode(gff_iterator, codonmap, endprotect, set_mane):
         replace_map_for = getReplaceMap(record,'forward',cds_ranges_for,cds_ranges_for_all,codonmap,endprotect)
         replace_map_rev = getReplaceMap(record,'reverse',cds_ranges_rev,cds_ranges_rev_all,codonmap,endprotect)
         logging.debug('Following codons will we inserted: \n  Forward: {} \n  Reverse: {}'.format(replace_map_for, replace_map_rev))
+
+
+        # output for primeDesign software if wanted
+        if primedesign == True:
+            export_primedesign_format(record, replace_map_for,replace_map_rev, outdir, outprefix)
 
         # replace codons
         mutable_seq = record.seq.tomutable() # makes sequence mutable
@@ -235,7 +241,9 @@ def selectCDS(rangelist, set_mane):
                 elif keep_cds[-1][3] in mane_list: continue
                 # if only current one is MANE, don't recode last one
                 elif rangelist[i][3] in mane_list: keep_cds[-1] = rangelist[i]
-                else: logging.warning("It looks like you have a special case that has not been considered.")
+                else: 
+                    conflict_cds.append(rangelist[i])
+                    logging.warning("It looks like you have a special case that has not been considered. Current cds is added to conflict")
             else:
                 conflict_cds.append(rangelist[i])
                 logging.warning("It looks like you have a special case that has not been considered. The current cds will be added to conflict")

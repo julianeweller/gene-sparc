@@ -1,9 +1,5 @@
 # This file specifies codon mapping, 1st column: old codon, 2nd column: new codon
 
-AAA	GGG
-AAG	GGG
 GCT	GCC
-GCA	GCC
-GCG	GCC
-GCC	GCC
+
 

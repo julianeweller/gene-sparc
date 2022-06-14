@@ -52,7 +52,8 @@ def main():
     defaults = {'verbosity':'info', 'flank':0, 'output_dir':'./',\
                 'sp_filter': ['ALL'], 'sp_length': 3,\
                 'endprotect':0, 'transcriptpriority': 'max',
-                'join':True}
+                'join':True,
+                'primedesign': False}
     
     # Create the command line interface:
     parser = argparse.ArgumentParser(description='Annotate genome safe regions for gene editing')
@@ -73,7 +74,7 @@ def main():
     parser.add_argument("-tp",'--transcriptpriority',type = str, default = defaults['transcriptpriority'], choices = ['max','soft','maneonly'], help = "Choose either 'max' (if none of the overlapping cds is a MANE transcript, the longest cds will be taken),'soft' (if none of the overlapping transcripts is a MANE, none will be recoded) or 'maneonly' (only MANE transcripts will be recoded).")
     # Optional
     parser.add_argument('-j', '--join', type = bool, default=defaults['join'], help = 'If True, a joined CompoundLocation annotations will be created for each transcript.')
-
+    parser.add_argument('-pd', '--primedesign', type = bool, default=defaults['primedesign'], help = 'Outputs file input for primedesign tool if True.')
     # Parse the CLI:
     args = parser.parse_args()
     
@@ -220,7 +221,7 @@ def main():
     if len(codonmap) > 0:
         try:
             logging.info('Recoding map used: {}'.format(codonmap))
-            data_handle = recode(data_handle, codonmap, args.endprotect, set_mane)
+            data_handle = recode(data_handle, codonmap, args.endprotect, set_mane, output_dir, args.output_prefix, args.primedesign)
         except Exception as err:
             error('Recoding failed.')
     else:
